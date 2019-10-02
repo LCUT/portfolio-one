@@ -9,8 +9,9 @@ body {
   width: 960px;
   background: darkslategray;
 }
-  
-header {
+   
+
+header { 
   max-width: 100%;
   text-align: center;
   background-color: black;
