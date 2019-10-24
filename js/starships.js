@@ -19,4 +19,3 @@ starships.forEach(ship => {
     contentArea.appendChild(shipDiv)
 })
 
-function get Char
