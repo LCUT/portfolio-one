@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -62,7 +63,10 @@ nav {
 .projects-section-header {
     background: black;
     padding: 50px;
-    font-size: 4rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: normal;
+    text-align: center;
 }
 
 
