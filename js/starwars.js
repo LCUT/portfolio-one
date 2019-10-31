@@ -11,7 +11,7 @@ const otherCharacters = people.filter(person => person.gender !== 'female' && pe
 
 let maleButton = document.createElement('button')
 maleButton.textcontent = "Male Characters"
-maleButton.addEventListener('click', () => {
+maleButton.addEventListener('click', event => {
     maleCharacters.forEach(elt => {
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
