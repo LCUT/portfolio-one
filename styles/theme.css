@@ -1,0 +1,106 @@
+body { 
+  font-family: trajan-pro-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(./images/snowyMountain.jpg);
+  background-repeat: repeat-y;
+  background-size: 100vw;
+  color: black;
+  padding: 0px;
+  margin: auto;
+  max-width: 1300px;
+}
+
+.bodyMiddle {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  background: darkgray;
+  opacity: .8;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  color: darkslategray;
+}
+
+.title {
+  padding-top: 5%;
+  width:90%;
+  margin: auto;
+}
+
+.topDiv {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.buttons {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: center;
+  background: black;
+}
+
+button {
+  height: 50px;
+  background: black;
+  width: 33%;
+  color: white;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-family: trajan-pro-3, serif;
+}
+
+.scene {
+  width: 33%;
+  height: 260px;
+  border: 1px solid #CCC;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: Black;
+}
+
+.card__face--back {
+  background: darkslategray;
+  transform: rotateY(180deg);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
