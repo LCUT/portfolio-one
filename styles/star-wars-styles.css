@@ -1,34 +1,84 @@
 
 
 body {
-    background-image: url(/images/stars.jpg);
-    background-repeat: repeat-y;
-    background-size: 100vw;
-    width: 100%;
+    background: url(/images/stars.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.overlay {
+    background: #252427;
+    width: 80%;
+    margin: auto;
+    padding: 3rem;
+    height: auto;
+    border-left: solid 3px darkslateblue;
+    border-right: solid 3px darkslateblue;
+    opacity: .9;
+}
+
+.logoImage {
+    width: 400px;
+    border: 3px solid darkslateblue;
+    padding: 10px;
 }
 
 main {
-    background-repeat: repeat-y;
-    background-size: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 2rem;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1680px;
     margin: 0 auto;
     margin-bottom: 6rem;
 
 }
 
 header {
-    display: flex;
-    justify-content: center;
-
+    padding-bottom: 4rem;
+    text-align: center;
 }
 
 button {
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 5px;
+    height: 75px;
     
+}
+
+button:hover {
+    background-color: darkgray;
+    border: 1px solid darkgray;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+}
+
+img {
+    width: 250px;
+    border: solid 1px transparent;
+    border-radius: 10px;
+}
+
+div.pic {
+    width: 20px;
+}
+
+div.card {
+    display: block;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5px;
 }
