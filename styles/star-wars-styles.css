@@ -37,7 +37,6 @@ main {
     max-width: 1680px;
     margin: 0 auto;
     margin-bottom: 6rem;
-
 }
 
 header {
@@ -52,9 +51,8 @@ button {
     padding: 20px;
     border-radius: 5px;
     height: 100px;
-    width: 30%;
-    margin: 10px;
-    
+    width: 350px;
+    margin: auto;
 }
 
 button:hover {
@@ -80,8 +78,7 @@ div.pic {
 }
 
 div.card {
-    display: block;
-    align-items: center;
+    text-align: center;
     border: 1px solid transparent;
     padding: 5px;
 }
