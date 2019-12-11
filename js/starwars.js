@@ -39,19 +39,20 @@ function getCharNumber(charURL) {
 
 const maleCharacters = people.filter(person => person.gender === 'male')
 const femaleCharacters = people.filter(person => person.gender === 'female')
+const otherCharacters = people.filter(person => person.gender !== 'female' && person.gender !== 'male')
 const allDivs = Array.from(mainArea.querySelectorAll('div'))
 
-const otherCharacters = people.filter(person => person.gender !== 'female' && person.gender !== 'male')
+
 
 
 let maleButton = document.createElement('button')
-maleButton.textcontent = "Male Characters"
+maleButton.textContent = "Male Characters"
 maleButton.addEventListener('click', () => {
     femaleCharacters.forEach(elt => {
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
         })
-        matchedDiv[0].setAttribute("style", "display: none;")
+        matchedDiv[0].setAttribute("style", "display: none")
     })
 })
 
@@ -62,14 +63,14 @@ femaleButton.addEventListener('click', () => {
         let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
         })
-        matchedDiv[0].setAttribute("style", "display: none;")
+        matchedDiv[0].setAttribute("style", "display: none")
     })
 })
 
 let allButton = document.createElement('button')
-allButton.textContent = "All Characters"
-allButton.addEventListener('click', () => {
-  femaleCharacters.forEach(elt =>{
+otherButton.textContent = "Other Characters"
+otherButton.addEventListener('click', () => {
+  femaleCharacters.forEach(elt => {
     let matchedDiv = allDivs.filter(element => {
       return element.firstChild.textContent === elt.name
     })
@@ -78,13 +79,9 @@ allButton.addEventListener('click', () => {
   })
 })
 
-mainHeader.appendChild(allButton)
+mainHeader.appendChild(otherButton)
 mainHeader.appendChild(maleButton)
 mainHeader.appendChild(femaleButton)
-
-
-
-
 
 
 

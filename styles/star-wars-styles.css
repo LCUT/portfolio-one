@@ -51,11 +51,17 @@ button {
     height: 100px;
     width: 350px;
     margin: auto;
+    box-shadow: 5px 4px black;
+    background-color: white;
 }
 
 button:hover {
-    background-color: darkgray;
-    border: 1px solid darkgray;
+    border: 5px solid darkslateblue;
+}
+
+button:focus {
+    border: 5px solid darkslateblue;
+    outline: none;
 }
 
 h1 {
