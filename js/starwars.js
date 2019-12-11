@@ -1,7 +1,11 @@
 import { people } from '../assets/people.js'
 
+
+
 let mainArea = document.querySelector('main')
 let mainHeader = document.querySelector('header')
+
+
 
 people.forEach(function(person) {
     let personDiv = document.createElement('div')
@@ -25,6 +29,8 @@ people.forEach(function(person) {
 
     mainArea.appendChild(personDiv)
 })
+
+
 
 function getCharNumber(charURL) {
     let end = charURL.lastIndexOf('/')
@@ -78,6 +84,8 @@ otherButton.addEventListener('click', () => {
     
   })
 })
+
+
 
 mainHeader.appendChild(otherButton)
 mainHeader.appendChild(maleButton)
