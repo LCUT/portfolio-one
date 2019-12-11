@@ -41,15 +41,19 @@ main {
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 4rem;
-    text-align: center;
 }
 
 button {
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 5px;
-    height: 75px;
+    height: 100px;
+    width: 30%;
+    margin: 10px;
     
 }
 
@@ -60,10 +64,9 @@ button:hover {
 
 h1 {
     font-size: 3rem;
-    font-weight: bold;
     color: white;
     text-align: center;
-
+    width: 100%;
 }
 
 img {
