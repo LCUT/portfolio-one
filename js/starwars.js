@@ -67,7 +67,7 @@ femaleButton.addEventListener('click', () => {
     })
 })
 
-let allButton = document.createElement('button')
+let otherButton = document.createElement('button')
 otherButton.textContent = "Other Characters"
 otherButton.addEventListener('click', () => {
   femaleCharacters.forEach(elt => {
