@@ -68,7 +68,7 @@ function getGotNumber(charURL) {
 }
 
 function fillCardFront(gotFront, data) {
-    gotFront.setAttribute('class', 'card__face card__face--front')
+    gotFront.setAttribute('class', 'card_face card_face--front')
     let name = document.createElement('P')
     let pic = document.createElement('img')
     pic.setAttribute('class', 'picDivs')
@@ -82,7 +82,7 @@ function fillCardFront(gotFront, data) {
 }
 
 function fillCardBack(gotBack, data) {
-    gotBack.setAttribute('class', 'card__face card__face--back')
+    gotBack.setAttribute('class', 'card_face card_face--back')
     let gotOrder = document.createElement('p')
     let gotHP = document.createElement('h5')
     gotOrder.textContent = `#${data.id} ${data.name[0].toUpperCase()}${data.name.slice(1)}`
