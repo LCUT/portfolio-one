@@ -54,9 +54,9 @@ const allDivs = Array.from(mainArea.querySelectorAll('div'))
 let maleButton = document.createElement('button')
 maleButton.textContent = "Male Characters"
 maleButton.addEventListener('click', () => {
-    femaleCharacters.forEach(elt => {
+    femaleCharacters.forEach(person => {
         let matchedDiv = allDivs.filter(element => {
-            return element.firstChild.textContent === elt.name
+            return element.firstChild.textContent === person.name
         })
         matchedDiv[0].setAttribute("style", "display: none")
     })
@@ -65,9 +65,9 @@ maleButton.addEventListener('click', () => {
 let femaleButton = document.createElement('button')
 femaleButton.textContent = "Female Characters"
 femaleButton.addEventListener('click', () => {
-    maleCharacters.forEach(elt => {
+    maleCharacters.forEach(person => {
         let matchedDiv = allDivs.filter(element => {
-            return element.firstChild.textContent === elt.name
+            return element.firstChild.textContent === person.name
         })
         matchedDiv[0].setAttribute("style", "display: none")
     })
@@ -76,9 +76,9 @@ femaleButton.addEventListener('click', () => {
 let otherButton = document.createElement('button')
 otherButton.textContent = "Other Characters"
 otherButton.addEventListener('click', () => {
-  femaleCharacters.forEach(elt => {
+  femaleCharacters.forEach(person => {
     let matchedDiv = allDivs.filter(element => {
-      return element.firstChild.textContent === elt.name
+      return element.firstChild.textContent === person.name
     })
     matchedDiv[0].setAttribute("style", "display: revert")
     
