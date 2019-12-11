@@ -1,13 +1,17 @@
+const url = "https://www.anapioficeandfire.com/api/characters";
+
+let mainArea = document.querySelector('main')
+
+
 var card = document.querySelector('.card');
 card.addEventListener( 'click', function() {
   card.classList.toggle('is-flipped');
 });
 
 class gotCharacter {
-    constructor(id, name, stats) {
+    constructor(id, name) {
         this.id = id;
         this.name = name;
-        this.base_stat = stats
     }
 }
 
@@ -32,7 +36,7 @@ const theData = getAPIData('https://anapioficeandfire.com/api/characters/')
     }
 })
 
-let mainArea = document.querySelector('main')
+
 
 function populateDOM(single_character) {
     gotArray.forEach(name => {
