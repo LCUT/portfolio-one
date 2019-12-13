@@ -61,11 +61,12 @@ maleButton.addEventListener('click', () => {
     });
 } )
 
+
 let femaleButton = document.createElement("button")
 femaleButton.textContent = "Female Characters"
 femaleButton.addEventListener('click', () => {
     femaleCharacters.forEach(elt => {
-        let matchedDiv = allDivs.find(element => {
+        let matchedDiv = allDivs.filter(element => {
             return element.firstChild.textContent === elt.name
         })
         matchedDiv[0].setAttribute("style","display:none;")

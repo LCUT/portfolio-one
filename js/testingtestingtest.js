@@ -59,6 +59,8 @@ maleButton.addEventListener('click', () => {
     matchedDiv[0].setAttribute("style", "display: none;" )
   });
 } )
+
+
 let femaleButton = document.createElement("button")
 femaleButton.textContent = "Female Characters"
 femaleButton.addEventListener('click', () => {
