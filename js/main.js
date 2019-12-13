@@ -77,6 +77,7 @@ function fillCardFront(gotFront, data) {
     let pic = document.createElement('img')
     pic.setAttribute('class', 'picDivs')
     let gotNum = getGotNumber(data.id)
+    
     gotFront.appendChild(name)
 
     pic.src = `../images/${gotNum}.png`
@@ -84,6 +85,7 @@ function fillCardFront(gotFront, data) {
     gotFront.appendChild(pic)
     gotFront.appendChild(name)
 }
+
 
 function fillCardBack(gotBack, data) {
     gotBack.setAttribute('class', 'card_face card_face--back')

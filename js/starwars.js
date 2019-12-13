@@ -51,7 +51,7 @@ const allDivs = Array.from(mainArea.querySelectorAll("div"))
 
 
 let maleButton = document.createElement("button")
-maleButton.textContent = "Male Characters"
+maleButton.textContent = "The Male Characters"
 maleButton.addEventListener('click', () => {
     maleCharacters.forEach(elt => {
         let matchedDiv = allDivs.filter(element => {
@@ -63,7 +63,7 @@ maleButton.addEventListener('click', () => {
 
 
 let femaleButton = document.createElement("button")
-femaleButton.textContent = "Female Characters"
+femaleButton.textContent = "The Female Characters"
 femaleButton.addEventListener('click', () => {
     femaleCharacters.forEach(elt => {
         let matchedDiv = allDivs.filter(element => {
